@@ -1,3 +1,13 @@
+---
+# this section, that is, the region within the two lines of three
+# dashes, is named "Front Matter". Jekyll will not process a file which
+# does NOT contain a front matter. In this file, we need a front matter
+# because we haved used Liquid Syntax on "Hello World!" below in order
+# to convert it to small case. In order for it to be processed by
+# Jekyll, this file needs to be processed by Jekyll, and in order for this
+# file to be processed by Jekyll, this file needs a front matter. Hence,
+# we add this front matter to the file.
+---
 <!doctype html>
 <html>
 <head>
@@ -5,6 +15,6 @@
   <title>Home</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <h1>{{ "Hello World!" | downcase }}</h1>
 </body>
 </html>
