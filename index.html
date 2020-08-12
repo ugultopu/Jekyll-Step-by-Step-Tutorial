@@ -7,12 +7,13 @@
 # Jekyll, this file needs to be processed by Jekyll, and in order for this
 # file to be processed by Jekyll, this file needs a front matter. Hence,
 # we add this front matter to the file.
+title: Home
 ---
 <!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <title>{{ page.title }}</title>
 </head>
 <body>
   <h1>{{ "Hello World!" | downcase }}</h1>
